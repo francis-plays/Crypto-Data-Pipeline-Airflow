@@ -34,7 +34,7 @@ default_args = {
 with DAG(
     'crypto_price_pipeline',
     default_args=default_args,
-    schedule='*/0 * * * *',  # Every 1h  for testing
+    schedule='0 * * * *',  # Every 1h  for testing
     catchup=False,
     description='Hourly crypto price pipeline: CoinGecko → S3 → Snowflake',
     tags=['crypto', 'etl', 'hourly'],
