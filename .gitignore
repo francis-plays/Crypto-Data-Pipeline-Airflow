@@ -1,0 +1,23 @@
+# Credentials
+.env
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Airflow
+logs/
+airflow.db
+airflow.cfg
+webserver_config.py
+
+# IDE
+.vscode/
+.DS_Store
+
+# Data files (if any get created locally)
+*.csv
+*.json
